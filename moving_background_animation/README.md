@@ -5,6 +5,9 @@ This site is an example site taken from the video: https://www.youtube.com/watch
 
 Image used in background: https://www.freepik.com/free-vector/flat-cityscape-pack_829214.htm
 
+Car image used in the project:
+https://www.freepik.com/free-vector/assortment-fantastic-car-silhouettes_1089576.htm
+
 The site might not be 100% like in the video example...
 
 /***********************************************************************************/
