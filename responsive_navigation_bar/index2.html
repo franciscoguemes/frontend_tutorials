@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+
+    </header>
+    <script type="text/javascript">
+        window.onload=function(){
+            var div = document.getElementsByClassName("menu-toggle")[0];
+            div.addEventListener("click", showOrHideMenu);
+            var links = document.querySelectorAll('nav ul li a');
+            for(var link of links){
+                link.addEventListener("click", changeActiveMenuItem);
+            }
+        }
+
+        function showOrHideMenu(event){
+            var div = document.getElementsByClassName("menu-toggle")[0];
+            toggleClass(div,"active");
+            var nav = document.getElementsByTagName("nav")[0];
+            toggleClass(nav,"active");
+        }
+
+        function changeActiveMenuItem(event){
+            var activeItem = document.querySelectorAll('a.active')[0];
+            toggleClass(activeItem,"active");
+            toggleClass(event.target,"active");
+        }
+
+        function toggleClass(el,className){
+            if(el.classList.contains(className)){
+                el.classList.remove(className);
+            }else{
+                el.classList.add(className);
+            }
+        }
+    </script>
+</body>
+
+</html>
