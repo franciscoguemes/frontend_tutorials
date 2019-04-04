@@ -12,6 +12,20 @@ improvements such as:
 + Ignores the opposite direction. I.e. If the snake goes down it ignores
 	the up key pressed since the snake can not go backwards.
 
+/***********************************************************************************/
+
+Future improvements:
++ Scoring
++ Game over (letters)
++ Add a mode where hitting the walls also kill the snake
++ Add another item that kills the snake
++ Improve the graphics with images (like an apple).
++ Choose levels of difficulty
+	+ Super Easy (Slow and walls do not kill)
+	+ Easy (Slow)
+	+ Difficult (Fast)
+	+ Super difficult (Fast and walls kill)
+	+ Dead mode (Fast, walls kill and double of bombs)
 
 /***********************************************************************************/
 
