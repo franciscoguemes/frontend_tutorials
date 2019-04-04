@@ -16,12 +16,13 @@
        }
        const LEFT =37;
        const UP=38;
-       const RIGTH=39;
+       const RIGHT=39;
        const DOWN=40;
        previousKey= oppositeKey = null;
        px=py=10;
        gs=tc=20;
        ax=ay=15;
+       bx=by=5;
        xv=yv=0;
        trail=[];
        tail=5;
@@ -57,13 +58,23 @@
             }
 
             if(ax==px && ay==py){
-                tail+=1; //Number of units of increment
+                tail+=10; //Number of units of increment
                 ax=Math.floor(Math.random()*tc);
                 ay=Math.floor(Math.random()*tc);
             }
 
-            ctx.fillStyle="red";
+	    ctx.fillStyle="red";
             ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+
+
+	    if(bx==px && by==py){
+                tail=5; //You took the bomb, Game Over
+                bx=Math.floor(Math.random()*tc);
+                by=Math.floor(Math.random()*tc);
+            }
+
+	    ctx.fillStyle="yellow";
+            ctx.fillRect(bx*gs,by*gs,gs-2,gs-2);
        }
        function keyPush(evt){
             if(evt.keyCode==previousKey){
