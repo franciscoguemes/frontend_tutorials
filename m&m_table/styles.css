@@ -1,0 +1,65 @@
+.parent-div-centered{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comparisson{
+    background-color:#bbb;
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.comparisson td{
+  width: 49%;
+}
+.comparisson td:nth-child(2) {
+  width: 51%;
+}
+
+.comparisson th,td{
+    padding: 0px;
+}
+
+.comparisson thead {
+    text-align: center;
+    font-size: 24px;
+}
+
+.comparisson thead th{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color:black;
+}
+
+.comparisson tr th:nth-child(2),td:nth-child(2) {
+    color: #FFFFFF;
+    background-color:rgb(99, 177, 117);
+    border-color:white;
+}   
+
+.comparisson tfoot tr td {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comparisson tfoot td{
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color:black;
+  border-width: 80%;
+}
+
+.comparisson tfoot td:nth-child(2) {
+  border-color:white;
+}
+
