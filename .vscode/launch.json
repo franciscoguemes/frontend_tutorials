@@ -11,7 +11,7 @@
             "request": "launch",
             "name": "Snake game",
             "url": "http://localhost/index.html",
-            "webRoot": "${workspaceFolder}/frontend_tutorials/snake",
+            "webRoot": "${workspaceFolder}/frontend_tutorials/games/snake",
             "runtimeExecutable": "/snap/bin/chromium"
         }
     ]
