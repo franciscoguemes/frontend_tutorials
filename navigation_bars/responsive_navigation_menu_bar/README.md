@@ -1,14 +1,10 @@
-22.02.2019  --> Coded while I am flying to Madrid :-)
+TODO
+
+27.03.2020  --> Coded during the quarantine
 
 
-This site is an example site taken from the video: https://www.youtube.com/watch?v=ZA9kwht8n9Q
+This site is an example site taken from the video: https://www.youtube.com/watch?v=oLgtucwjVII
 
-
-Images used in the project: 
-
-Icons:
-
-Font:
 
 
 The site might not be 100% like in the video example...
